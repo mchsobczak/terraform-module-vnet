@@ -6,4 +6,5 @@ module "naming" {
 
 locals {
   virtual_network_name = module.naming.virtual_network.name
+  network_security_group_name = module.naming.network_security_group.name
 }
