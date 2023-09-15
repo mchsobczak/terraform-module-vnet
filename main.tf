@@ -2,12 +2,12 @@ resource "azurerm_network_security_group" "nsg" {
   name                = local.network_security_group_name
   location            = var.location
   resource_group_name = var.resource_group_name
-
+  tags = var.tags
 }
 
 resource "azurerm_virtual_network" "vnet" {
   name                = local.virtual_network_name
-  location            = "westeurope"
+  location            = var.location
   resource_group_name = var.resource_group_name
   address_space       = ["10.10.10.0/24"]
 

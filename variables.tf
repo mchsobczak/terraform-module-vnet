@@ -32,3 +32,8 @@ variable "project_prefix" {
     error_message = "Project prefix must be 3 characters long"
   }
 }
+
+variable "tags" {
+  type = map(string)
+  description = "Tags to associate with a resource"
+}

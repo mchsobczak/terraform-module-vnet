@@ -6,5 +6,4 @@ module "naming" {
 
 locals {
   virtual_network_name = module.naming.virtual_network.name
-
 }
