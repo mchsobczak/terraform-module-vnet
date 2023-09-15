@@ -1,0 +1,3 @@
+tags = {
+    "project" = "Szkolenie Terraform"
+}
